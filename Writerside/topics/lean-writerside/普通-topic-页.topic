@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="普通topic页" id="普通-topic-页">
+    <contribute-url>https://github.com/JetBrains/intellij-sdk-docs/edit/main/topics/intro</contribute-url>
+    <p id="anchor-p">this is anchored</p>
+    <!-- 跳转到指定文件的指定锚点-->
+    <a href="普通-topic-页.topic" anchor="anchor-p">Link to anchor</a>
+    <br/> <!-- 换行 -->
+    <note>note</note>
+    <tip>tip</tip>
+    <warning>warning</warning>
+    <!-- Card相关标记只能使用在 section-starting-page 中 -->
+
+    <!--
+    seealso的用途是指向在当前文档外的其他相关文档、链接
+    因此不能指向使用seealso的文档
+    -->
+    <seealso>
+        <category ref="wrs">
+            <a href="https://www.jetbrains.com/help/writerside/markup-reference.html">Markup reference</a>
+        </category>
+        <category ref="md">
+            <a href="https://markdown.com.cn/">markdown</a>
+            <a href="https://spec.commonmark.org/0.30/">commonmark</a>
+        </category>
+    </seealso>
+    <chapter title="标题名称" id="chapter1">
+        <p>Whenever you are not sure what to do</p>
+        <p>try a barrel roll first</p>
+        <p>then ask for help.</p>
+    </chapter>
+    <chapter title="标题名称2" id="chapter2"/>
+    <chapter title="Do a barrel roll" id="barrel-roll">
+        <title>标题名称3</title>
+    </chapter>
+    <procedure title="Some procedure" id="some_procedure">
+        <step>Do this</step>
+        <step>Do that</step>
+    </procedure>
+
+    <deflist>
+        <def title="Expanded by default" id="expanded-by-default">This is the definition of the first term.</def>
+    </deflist>
+
+    <contribute-url>https://github.com</contribute-url>
+    <p>To show the recipe, select
+        <control>Show recipe</control>
+        and click
+        <control>OK</control>
+        .
+    </p>
+
+    <ui-path>File | New | Project</ui-path>
+    <br/>
+    <control>文件 | 设置 | 编辑器 | 字体</control>
+
+    <card-summary>
+        This topic is about Foo.
+        This text will not render in the topic.
+        It is used only in cards on a section starting page.
+    </card-summary>
+
+    <include from="普通页-topic-语法理解.md" element-id="img"/>
+    <inline-frame src="https://www.163.com/" width="800px" height="800px"/>
+    <math>\left(x-1\right)\left(x+3\right)</math>
+
+    <p><img src="../../images/icons/training.svg" alt="Image" style="inline" width="32"/> 挺好看</p>
+
+
+    <p>Specify the configuration file:
+        <path>path/to/config</path>
+    </p>
+
+    <primary-label ref="label"/>
+    <secondary-label ref="wip"/>
+    <secondary-label ref="beta"/>
+    <p>
+        This is a labeled topic about some Beta version of an unfinished feature.</p>
+
+    <chapter title="Some chapter" id="some-chapter">
+        <primary-label ref="jetbrains"/>
+        <secondary-label ref="2023.3"/>
+        <secondary-label ref="experimental"/>
+        <p>
+            This chapter is marked with the JetBrains label,
+            applies to version 2023.3, and describes something experimental.</p>
+    </chapter>
+
+    <procedure title="Become a professional" id="become-a-professional">
+        <step>Learn something</step>
+        <step>Get paid for doing it</step>
+        <step>(Optional) Do a barrel roll</step>
+    </procedure>
+
+    <resource src="./普通-topic-页.topic">点击下载文件</resource>
+
+    <p>Press
+        <shortcut key="$Copy"/>
+        to copy.
+    </p>
+
+    <show-structure for="chapter,procedure" depth="3"/>
+
+    <table>
+        <tr>
+            <td>First cell in the first row</td>
+            <td>Second cell in the first row</td>
+            <td>Third cell in the first row</td>
+        </tr>
+    </table>
+    <p>Choose your
+        <tooltip term="GUI">GUI</tooltip>
+        .
+    </p>
+
+    <tldr>
+        <p>
+            <ui-path>File | Save</ui-path>
+            or
+            <shortcut>Ctrl + S</shortcut>
+        </p>
+        <p>You can't save if the file is open in another application</p>
+    </tldr>
+</topic>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Start" id="Start">
+    <section-starting-page>
+        <title>起始页</title>
+        <description>该页面是文档库的首页</description>
+        <spotlight>
+            <card badge="start" href="起始页-topic-语法理解.md">起始页语法理解</card>
+            <card badge="file" href="普通页-topic-语法理解.md">普通页语法理解</card>
+        </spotlight>
+        <primary>
+            <title>文档相关</title>
+            <a href="About.md">About.md</a>
+            <a href="修改-buildprofiles-文件.md">buildprofiles.xml</a>
+        </primary>
+    </section-starting-page>
+</topic>

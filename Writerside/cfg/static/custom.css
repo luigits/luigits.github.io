@@ -1,0 +1,3 @@
+.tabs__content-wrapper[hidden=until-found] {
+    display: none;
+}
