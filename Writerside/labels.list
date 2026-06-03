@@ -23,4 +23,9 @@
     </primary-label>
     <secondary-label id="cli-secondary-scoop" name="v0.5.3" color="green"/>
     <secondary-label id="cli-secondary-bucket" name="all Bucket" color="marine">scoop.sh/#/buckets</secondary-label>
+
+    <!-- old -->
+    <secondary-label id="old-secondary-updated-218" name="Last update" color="marine">2024/2/18</secondary-label>
+    <secondary-label id="old-secondary-updated-219" name="last update" color="marine">2024/2/19</secondary-label>
+    <secondary-label id="old-secondary-updated-222" name="last update" color="marine">2024/2/22</secondary-label>
 </labels>

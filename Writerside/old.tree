@@ -7,4 +7,14 @@
                  start-page="About-old.md">
 
     <toc-element topic="About-old.md"/>
+    <toc-element toc-title="Linux">
+        <toc-element topic="redhat-安装-MySQL.md"/>
+        <toc-element topic="Rocky安装MySQL.md"/>
+        <toc-element topic="Linux-安装系统.md"/>
+    </toc-element>
+    <toc-element toc-title="Go">
+        <toc-element topic="log日志.md"/>
+        <toc-element topic="slog日志.md"/>
+        <toc-element topic="获取光标位置.md"/>
+    </toc-element>
 </instance-profile>
