@@ -10,4 +10,8 @@
         <description>Created after removal of "About Lean Writerside" from Lean Writerside</description>
         <accepts>lean-writerside.html</accepts>
     </rule>
+    <rule id="67e1416a">
+        <description>Created after removal of "About" from Python</description>
+        <accepts>About.html</accepts>
+    </rule>
 </rules>

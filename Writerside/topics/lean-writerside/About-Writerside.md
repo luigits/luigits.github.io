@@ -1,6 +1,6 @@
 # About
 
-本内容库使用[Writerside](https://www.jetbrains.com/writerside)完成，是由 JetBrains 公司开发的文档工具。
+<include from="project-library.md" element-id="about"/>
 
 官方帮助手册提供了旗下所有产品的使用手册，Writerside 也在其中：[Discover Writerside](https://www.jetbrains.com/help/writerside/discover-writerside.html)
 

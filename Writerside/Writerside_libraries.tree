@@ -3,8 +3,9 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="Writerside_libraries"
-                  name="Writerside_libraries" is-library="true" start-page="lean_writerside.topic">
+                  name="Writerside_libraries" is-library="true" start-page="lw-library.md">
 
-    <toc-element topic="lean_writerside.topic"/>
-    <toc-element topic="lib.md"/>
+    <toc-element topic="lw-library.md"/>
+    <toc-element topic="cli-library.md"/>
+    <toc-element topic="project-library.md"/>
 </instance-profile>

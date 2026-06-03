@@ -418,7 +418,7 @@ path 渲染后的字体大小是 15px
 
 <deflist>
 <def title="include">
-<include from="lean_writerside.topic" element-id="demo"/>
+<include from="lw-library.md" element-id="demo"/>
 </def>
 </deflist>
 

@@ -9,18 +9,19 @@
         <!-- 自定义logo -->
         <header-logo>education.svg</header-logo>
         <custom-favicons>high-tech-training.svg</custom-favicons>
+        <!--右上角的下载功能-->
+        <download-title>Get The Documents</download-title>
+        <download-page>https://gitee.com/luigits/writerside-document</download-page>
+        <showDownloadButton>true</showDownloadButton>
 
         <!--自定义反馈-->
         <!-- <feedback-widget>true</feedback-widget>-->
         <!-- <feedback-support>https://gitee.com/luigits/writerside-document</feedback-support>-->
         <!-- <feedbackRequireEmail>true</feedbackRequireEmail>-->
         <!-- <feedback-url>https://gitee.com/luigits/writerside-document</feedback-url> 不知道这个干啥的-->
-
-        <download-title>Get The Documents</download-title>
-        <download-page>https://gitee.com/luigits/writerside-document</download-page>
-        <showDownloadButton>true</showDownloadButton>
     </variables>
 
+    <!--  快捷键切换功能  -->
     <shortcuts>
         <src>keymap.xml</src>
         <layout name="Windows" display-name="Windows"/>
@@ -28,23 +29,43 @@
         <layout name="macOS" display-name="macOS"/>
     </shortcuts>
 
-    <build-profile instance="wl">
+    <!--  取消索引  -->
+    <build-profile instance="lw">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
+    <build-profile instance="cli">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+
+    <!--  页脚功能  -->
     <footer>
         <social type="email" href="2833171898@qq.com">Email</social>
-        <social type="discord" href="#">discord</social>
-        <social type="github" href="#">github</social>
-        <social type="location" href="#">location</social><!-- 用于定位公司/组织办公地点的， -->
-        <link href="#">友链 1</link>
-        <link href="#">友链 2</link>
-        <link href="#">友链 3</link>
+        <social type="discord" href="https://discord.gg/jetbrains">JetBrains-community</social>
+        <social type="github" href="https://github.com/luigits">luigits</social>
+        <social type="location" href="#">None</social><!-- 用于定位公司/组织办公地点的， -->
+        <link href="https://scoop.sh">Scoop</link>
+        <link href="https://aisharedkb.com/">AISharedKB</link>
+        <link href="https://regexlearn.com/">RegexLearn</link>
+        <link href="https://toml.io/cn/">Toml</link>
         <!--        <notice>Copyright © 2000–2026 ZhanYu</notice>-->
-        <icp>ICP 备案</icp>
+<!--        <icp>ICP 备案</icp>-->
         <copyright>2026 ZhanYu</copyright>
     </footer>
+    <build-profile instance="py">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+    <build-profile instance="old">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+
     <!--    试了很多次，即使问了AI也没有明确它的使用方法，AI甚至给出了这是旧版包袱的结果-->
     <!--    <icons>-->
     <!--        <shared-src>shared</shared-src>-->

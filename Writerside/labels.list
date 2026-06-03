@@ -2,6 +2,7 @@
 <!DOCTYPE labels SYSTEM "https://resources.jetbrains.com/writerside/1.0/labels-list.dtd">
 <labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/labels.xsd">
+    <!-- Learn Writerside -->
     <primary-label id="label" short-name="L" name="Label" color="green">
         Go to DeepSeek
     </primary-label>
@@ -16,4 +17,10 @@
     <secondary-label id="experimental" name="Experimental" color="purple">This is an experimental feature
     </secondary-label>
     <secondary-label id="2023.3" name="2023.3" color="blue">New in version 2023.3</secondary-label>
+
+    <!-- CLI -->
+    <primary-label id="cli-primary-scoop" name="scoop" short-name="S" href="https://scoop.sh/">跳转到scoop.sh
+    </primary-label>
+    <secondary-label id="cli-secondary-scoop" name="v0.5.3" color="green"/>
+    <secondary-label id="cli-secondary-bucket" name="all Bucket" color="marine">scoop.sh/#/buckets</secondary-label>
 </labels>

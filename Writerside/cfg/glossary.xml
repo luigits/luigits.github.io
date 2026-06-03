@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
 <terms>
+    <!-- Learn -->
     <term name="GUI">Graphical User Interface</term>
     <term name="HTTP">Hypertext Transfer Protocol</term>
+
+    <!-- CLI -->
+    <term name="GitHub">GitHub 是一项基于云的服务，为软件开发和 Git 版本控制提供 Internet 托管。</term>
+    <term name="Gitee">Gitee（码云）是开源中国于 2013 年推出的基于 Git 的代码托管平台、企业级研发效能平台、一站式 DevSecOps
+        平台，提供中国本土化的代码托管和项目管理服务。
+    </term>
+    <term name="Github Actions">GitHub Actions 是 GitHub 提供的一项 自动化工作流服务，用于在代码仓库中执行各种任务。它不仅支持
+        持续集成（CI）和 持续部署（CD），还可以响应 GitHub 上的多种事件（如代码推送、拉取请求、定时任务等），实现高度自定义的自动化流程。
+        Gitee 也提供了类似服务，叫 Gitee Go
+    </term>
 </terms>

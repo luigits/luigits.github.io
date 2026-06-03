@@ -5,7 +5,7 @@
 ## H2
 
 
-<include from="lean_writerside.topic" element-id="demo"/>
+<include from="lw-library.md" element-id="demo"/>
 
 ### H3
 
