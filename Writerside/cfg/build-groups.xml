@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE build-groups SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-groups.dtd">
+<build-groups xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-groups.xsd"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <build-group name="luigits-docs">
+        <instance instance-id="lw" alias="Writerside学习笔记" path="/learn-writerside"/>
+        <instance instance-id="py" alias="Python笔记" path="/python"/>
+        <instance instance-id="cli" alias="命令行工具记录" path="/cli"/>
+        <instance instance-id="old" alias="旧文档" path="/old"/>
+    </build-group>
+</build-groups>

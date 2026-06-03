@@ -22,6 +22,7 @@
         <toc-element topic="shortcuts-demo.md"/>
     </toc-element>
     <toc-element topic="修改-buildprofiles-文件.md"/>
+    <toc-element topic="配置build-groups.md"/>
     <toc-element topic="跳过的标记.md"/>
     <toc-element topic="topic-试验场.topic">
         <toc-element topic="普通-topic-页.topic"/>
