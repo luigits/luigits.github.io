@@ -4,9 +4,11 @@
 
 <instance-profile id="cli"
                  name="CLI"
-                 start-page="Quickstart-CLI.md">
+                 start-page="Start-CLI.md">
 
-    <toc-element topic="Quickstart-CLI.md"/>
+    <toc-element topic="Start-CLI.md"/>
+    <toc-element topic="ollama.md"/>
+    <toc-element topic="屎山代码分析工具.md"/>
     <toc-element topic="Scoop.md"/>
     <toc-element topic="About-CLI.md"/>
 </instance-profile>
