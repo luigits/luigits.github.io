@@ -30,6 +30,7 @@
 
 如果是为了学习基础的使用或者为了工作使用，那还是选择一个服务器系统吧，比如 RedHat(CentOS)、Rocky Linux 或者 Ubuntu
 以及其他。从我的使用上来说的话还是建议 RedHat、CentOS、Rocky Linux 入手。因为他们区别不大。
+
 ![](Rocky-about-page.png)
 
 从上图也能了解一些 RedHat、CentOS、Rocky Linux 之间的关系。我所使用的便是 Rocky Linux，同样的 Rocky Linux
@@ -37,15 +38,17 @@
 
 ### 1.下载系统
 
-系统的下载有两种方式，一是取官网下载，二是在镜像站下载，这里我选择的是官网，如果觉得下载速度慢可以选择[阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)
-或其他镜像站下载
+系统的下载有两种方式，一是取官网下载，二是在镜像站下载，这里我选择的是官网，如果觉得下载速度慢可以选择[阿里巴巴开源镜像站](https://developer.aliyun.com/mirror/)或其他镜像站下载
+
 ![](Rocky-home-page.png)
+
 在下载页面可以看到兼容的 RedHat 版本和停止维护的时间
+
 ![](Rocky-download-page.png)
 
-Minimal：最小化，没有常用软件包
-DVD：完全，带有常用软件包，可以创建本地软件源
-Boot：Live 运行，没用过，不知道能不能安装，大概率不行
+- Minimal：最小化，没有常用软件包 
+- DVD：完全，带有常用软件包，可以创建本地软件源 
+- Boot：Live 运行，没用过，不知道能不能安装，大概率不行
 
 > 我的下载权重是 Minimal>DVD>Boot，如果需要图形化界面直接选择 DVD 就好。
 
