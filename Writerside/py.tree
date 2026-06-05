@@ -6,5 +6,6 @@
                  name="Python"
                   start-page="About-Python.md">
 
+    <toc-element topic="Flet.md"/>
     <toc-element topic="About-Python.md"/>
 </instance-profile>
