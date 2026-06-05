@@ -10,6 +10,7 @@
 
 - 至少两个实例 (instance)
 - 创建了 <ui-path>cfg/build-groups.xml</ui-path>
+
 </tldr>
 
 ```xml
@@ -40,3 +41,27 @@
 </deflist>
 </tab>
 </tabs>
+
+## Github Actions
+
+编译好了文档自然要将其托管，GitHub 提供了 Github Pages 部署，这提供了两种方案：
+
+- 静态页面：需手动将 HTML 文件 push 到远程仓库
+- Github Actions：将文档 push 到远程仓库，Github Actions 自动化完成 build 并将其部署
+
+> 也就是说在 GitHub Pages 中选择 构建和部署来源是 Github Actions 后就不需要管后续编译，只需要将文档 push 到 GitHub 即可。
+>
+
+### 编写 workflow
+
+实现最方便的自然是 Github Actions，所以自然要配置 GitHub Actions。
+
+> 难易度
+> 
+> 选择从分支部署只需要将 Writerside 编译后的页面 push 到正确的分支即可，没什么额外的难度。
+> 
+> 选择 Github Actions 需要配置 workflow 文件，这其实是一项有难度的任务。
+>
+{style="note"}
+
+具体请查看[](Github-Actions.md)
