@@ -2,7 +2,7 @@ name: build no search
 on:
   workflow_dispatch:
   schedule:
-    cron: '0 0 * * 1'
+    - cron: '0 0 * * 1'
 
 permissions:
   id-token: write
