@@ -23,6 +23,8 @@
     </primary-label>
     <secondary-label id="cli-secondary-scoop" name="v0.5.3" color="green"/>
     <secondary-label id="cli-secondary-bucket" name="all Bucket" color="marine">scoop.sh/#/buckets</secondary-label>
+    <primary-label id="Github" name="Github" short-name="Github" href="https://github.com/Done-0/fuck-u-code">原始仓库</primary-label>
+
 
     <!-- old -->
     <secondary-label id="old-secondary-updated-218" name="Last update" color="marine">2024/2/18</secondary-label>

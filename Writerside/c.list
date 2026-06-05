@@ -4,4 +4,5 @@
 <categories>
     <category id="wrs" name="Writerside documentation" order="1"/>
     <category id="md" name="Markdown documentation" order="2"/>
+    <category id="link" name="seealso" order="3"/>
 </categories>

@@ -4,21 +4,58 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
+        <!-- 本地化语言 -->
+        <locale-code>zh</locale-code>
         <!-- 自定义css -->
         <custom-css>custom.css</custom-css>
         <!-- 自定义logo -->
-        <header-logo>education.svg</header-logo>
-        <custom-favicons>high-tech-training.svg</custom-favicons>
+        <header-logo>wroterside.svg</header-logo>
+        <!-- 点击logo跳转到指定网站 -->
+        <product-web-url>https://luigits.github.io</product-web-url>
+        <custom-favicons>wroterside.svg</custom-favicons>
         <!--右上角的下载功能-->
         <download-title>Get The Documents</download-title>
         <download-page>https://gitee.com/luigits/writerside-document</download-page>
         <showDownloadButton>true</showDownloadButton>
+        <!-- 代码块可换行 在代码块上增加切换按钮，可手动切换 -->
+        <code-soft-wrap>true</code-soft-wrap>
+        <!-- 链接打开方式为外部-->
+        <external-links-in-new-tab>true</external-links-in-new-tab>
+        <!-- 网站主要的高亮色 -->
+        <primary-color>ruby</primary-color>
+        <!-- 更换强调色
+            soft: 基本强调色的最小对比触感。随theme变化
+            contrast (default): 具有中等对比度和亮度的默认外观。灰色不变
+            vivid: 主要强调色的最大对比用法。使用primary-color设置的颜色
+         -->
+        <color-preset>soft</color-preset>
+
+        <!-- 自定义banner
+           bg-theme: banner背景色
+           date: banner消失的时间(若没有则无限显示)，显示在标题的右侧
+           label: banner的主题标签，显示在最左侧
+           link: 将整个banner设为超链接，并在标题右侧添加向右的箭头表示可跳转
+        -->
+        <!--  <custom-banner bg-theme="strawberry" label="banner" link="https://github.com">前往GitHub</custom-banner> -->
 
         <!--自定义反馈-->
         <!-- <feedback-widget>true</feedback-widget>-->
         <!-- <feedback-support>https://gitee.com/luigits/writerside-document</feedback-support>-->
         <!-- <feedbackRequireEmail>true</feedbackRequireEmail>-->
         <!-- <feedback-url>https://gitee.com/luigits/writerside-document</feedback-url> 不知道这个干啥的-->
+
+        <!-- 侧边栏宽度 -->
+        <!-- <sidebar-width>200</sidebar-width>-->
+
+        <!-- 多版本的官方文档：https://www.jetbrains.com/help/writerside/support-multiple-versions.html -->
+        <!-- <versions-switcher>https://my.documentation.com/help-versions.json</versions-switcher> -->
+        <!-- <webmaster>Contact us</webmaster> -->
+
+        <!-- 搜索功能 algolia -->
+        <!--        <algolia-id>IQJY6Y75HL</algolia-id>-->
+        <!--        <algolia-api-key>b92b1174c3d74d55c4695220b771f2a4</algolia-api-key>-->
+        <!--        <algolia-index>luigit_github_io</algolia-index>-->
+        <!--        <algolia-show-logo>true</algolia-show-logo>-->
     </variables>
 
     <!--  快捷键切换功能  -->
@@ -29,7 +66,7 @@
         <layout name="macOS" display-name="macOS"/>
     </shortcuts>
 
-    <!--  取消索引  -->
+    <!--  限制外部引擎索引  -->
     <build-profile instance="lw">
         <variables>
             <noindex-content>false</noindex-content>
@@ -40,21 +77,6 @@
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
-
-    <!--  页脚功能  -->
-    <footer>
-        <social type="email" href="2833171898@qq.com">Email</social>
-        <social type="discord" href="https://discord.gg/jetbrains">JetBrains-community</social>
-        <social type="github" href="https://github.com/luigits">luigits</social>
-        <social type="location" href="#">None</social><!-- 用于定位公司/组织办公地点的， -->
-        <link href="https://scoop.sh">Scoop</link>
-        <link href="https://aisharedkb.com/">AISharedKB</link>
-        <link href="https://regexlearn.com/">RegexLearn</link>
-        <link href="https://toml.io/cn/">Toml</link>
-        <!--        <notice>Copyright © 2000–2026 ZhanYu</notice>-->
-<!--        <icp>ICP 备案</icp>-->
-        <copyright>2026 ZhanYu</copyright>
-    </footer>
     <build-profile instance="py">
         <variables>
             <noindex-content>false</noindex-content>
@@ -66,9 +88,25 @@
         </variables>
     </build-profile>
 
+    <!--  页脚功能  -->
+
+    <footer>
+        <social type="email" href="2833171898@qq.com">Email</social>
+        <social type="discord" href="https://discord.gg/jetbrains">JetBrains-community</social>
+        <social type="github" href="https://github.com/luigits">luigits</social>
+        <link href="https://scoop.sh">Scoop</link>
+        <link href="https://aisharedkb.com/">AISharedKB</link>
+        <link href="https://regexlearn.com/">RegexLearn</link>
+        <link href="https://toml.io/cn/">Toml</link>
+        <!--        <notice>不知道做什么的标签</notice>-->
+        <!--        <icp>ICP 备案</icp>-->
+        <copyright>2026 ZhanYu</copyright>
+    </footer>
+
     <!--    试了很多次，即使问了AI也没有明确它的使用方法，AI甚至给出了这是旧版包袱的结果-->
     <!--    <icons>-->
     <!--        <shared-src>shared</shared-src>-->
     <!--        <local-src>icons</local-src>-->
     <!--    </icons>-->
+    <sitemap change-frequency="monthly"/>
 </buildprofiles>

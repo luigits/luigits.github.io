@@ -8,4 +8,5 @@
     <toc-element topic="lw-library.md"/>
     <toc-element topic="cli-library.md"/>
     <toc-element topic="project-library.md"/>
+    <toc-element topic="py-library.md"/>
 </instance-profile>
