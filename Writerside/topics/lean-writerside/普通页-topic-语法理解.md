@@ -318,7 +318,9 @@ path 渲染后的字体大小是 15px
 
 ```XML
 
-<p>指定配置文件:<path>path/to/config</path></p>
+<p>指定配置文件:
+    <path>path/to/config</path>
+</p>
 ```
 
 指定配置文件:<path>path/to/config</path>
@@ -349,24 +351,29 @@ path 渲染后的字体大小是 15px
 
 ```xml
 
-<img src="image.png" alt="描述文字" style="inline|block" width="32"/>
+<img src="image.png" alt="描述文字" thumbnail="true" style="inline|block" width="32"/>
 ```
 
 </tab>
 <tab title="Markdown">
 
-```markdown
-![描述文字](image.png){style="inline|block" width="32"}
+```text
+![描述文字](image.png){style="inline|block" width="32"  thumbnail="true"}
 ```
 
 </tab>
 </tabs>
 
 <deflist>
+<def title=" thumbnail='true'">
+该属性能让小图片放大，以最大比例显示，可以作为缩略图来显示
+
+使用 markdown 方式不能让标签被嵌套，否则无效
+</def>
 <def title="style">
 <deflist>
     <def title="block">
-<img src="education.svg"  alt="aaa" style="block" width="32" /> asdd
+<img src="education.svg" alt="aaa" style="block" width="32" /> asdd
 </def>
 <def title="inline">
 <img src="education.svg"  alt="aaa" style="inline" width="32" /> asdd
@@ -400,6 +407,7 @@ path 渲染后的字体大小是 15px
 <tab title="插入 snippet 片段">
 
 使用`<snippet>` 片段需要先定义
+
 ```xml
 
 <snippet id="settings">
@@ -411,8 +419,11 @@ path 渲染后的字体大小是 15px
     </list>
 </snippet>
 ```
+
 通过 include 插入，语法上和使用文档片段是一样的
+
 ```XML
+
 <include from="定义片段的文档" element-id="snippet的id"/>
 ```
 

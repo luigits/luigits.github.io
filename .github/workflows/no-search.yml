@@ -1,16 +1,7 @@
-# @Author: ZhanYu
-# @Email: 2833171898@qq.com
-# @Date:   2026-06-06 17:10:06
-# @Last Modified by:   ZhanYu
-# @Last Modified time: 2026-06-03 13:11:17
-# @Github: https://github.com/Luigitttt
-# @blog: https://luigit.github.io/
-
-
 name: build no search
 on:
-  push:
-    branches: ['master']
+#  push:
+#    branches: ['master']
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 1'

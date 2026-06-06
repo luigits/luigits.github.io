@@ -7,16 +7,22 @@
     </layouts>
     <actions>
         <action id="$Copy">
-            <description>Copy</description>
+            <description>复制</description>
             <shortcut layout="Windows">Ctrl+C</shortcut>
             <shortcut layout="macOS">⌘ C</shortcut>
             <shortcut layout="Linux">Ctrl+C</shortcut>
         </action>
         <action id="$Paste">
-            <description>Paste</description>
+            <description>粘贴</description>
             <shortcut layout="Windows">Ctrl+V</shortcut>
             <shortcut layout="macOS">⌘ V</shortcut>
             <shortcut layout="Linux">Ctrl+V</shortcut>
+        </action>
+        <action id="$idea-insert">
+            <description>插入</description>
+            <shortcut layout="Windows">alt+insert</shortcut>
+            <shortcut layout="macOS">⌘ N</shortcut>
+            <shortcut layout="Linux">alt+insert</shortcut>
         </action>
     </actions>
 </keymap>
