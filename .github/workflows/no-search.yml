@@ -9,7 +9,8 @@
 
 name: build no search
 on:
-  push: 'master'
+  push:
+    branches: : ['master']
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 1'
