@@ -110,4 +110,14 @@
     <!--        <local-src>icons</local-src>-->
     <!--    </icons>-->
     <sitemap change-frequency="monthly"/>
+    <build-profile instance="soft">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+    <build-profile instance="ps">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
 </buildprofiles>

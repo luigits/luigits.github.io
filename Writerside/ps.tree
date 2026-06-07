@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="ps"
+                 name="PowerShell"
+                 start-page="About-powershell.md">
+
+    <toc-element topic="About-powershell.md"/>
+    <toc-element topic="安装-Powershell7.md"/>
+    <toc-element topic="安装-Windows-Terminal.md"/>
+</instance-profile>
