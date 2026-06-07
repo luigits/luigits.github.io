@@ -18,7 +18,7 @@
         <download-page>https://github.com/luigits/NoteLibrary</download-page>
         <showDownloadButton>true</showDownloadButton>
         <!-- 代码块可换行 在代码块上增加切换按钮，可手动切换 -->
-        <code-soft-wrap>true</code-soft-wrap>
+        <code-soft-wrap>false</code-soft-wrap>
         <!-- 链接打开方式为外部-->
         <external-links-in-new-tab>true</external-links-in-new-tab>
         <!-- 网站主要的高亮色 -->

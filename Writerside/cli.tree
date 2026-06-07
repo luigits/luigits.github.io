@@ -4,9 +4,9 @@
 
 <instance-profile id="cli"
                  name="CLI"
-                 start-page="Start-CLI.md">
+                 start-page="index-cli.md">
 
-    <toc-element topic="Start-CLI.md"/>
+    <toc-element topic="index-cli.md"/>
     <toc-element topic="ollama.md"/>
     <toc-element topic="屎山代码分析工具.md"/>
     <toc-element topic="Scoop.md"/>

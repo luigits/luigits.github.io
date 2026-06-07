@@ -4,9 +4,9 @@
 
 <instance-profile id="lw"
                  name="Lean Writerside"
-                  start-page="Start-lw.topic">
+                  start-page="index-lw.topic">
 
-    <toc-element topic="Start-lw.topic">
+    <toc-element topic="index-lw.topic">
         <toc-element topic="New-topic-功能.md"/>
         <toc-element topic="起始页-topic-语法理解.md"/>
         <toc-element topic="普通页-topic-语法理解.md">
