@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
 <terms>
-    <!-- Learn -->
+    <!-- Learn Writerside-->
     <term name="GUI">Graphical User Interface</term>
     <term name="HTTP">Hypertext Transfer Protocol</term>
 
@@ -14,4 +14,13 @@
         持续集成（CI）和 持续部署（CD），还可以响应 GitHub 上的多种事件（如代码推送、拉取请求、定时任务等），实现高度自定义的自动化流程。
         Gitee 也提供了类似服务，叫 Gitee Go
     </term>
+
+    <!-- Python -->
+    <term name="horizontal_alignment">page.horizontal_alignment</term>
+    <term name="vertical_alignment">page.vertical_alignment</term>
+    <term name="left_top">page.horizontal_alignment = ft.CrossAxisAlignment.START
+        page.vertical_alignment = ft.MainAxisAlignment.START
+    </term>
+    <term name="padding">容器于组件之间的间距</term>
+    <term name="spacing">容器于组件之间的间距</term>
 </terms>

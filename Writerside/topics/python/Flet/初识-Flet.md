@@ -1,4 +1,7 @@
-# Flet
+<show-structure depth="3"/>
+
+# 初识 Flet
+<secondary-label ref="global-construct"/>
 
 <tldr>
 <format color="Tomato">可以直接跳过本文档</format>
