@@ -24,16 +24,16 @@
 
 <topic xmlns:xsi="一个schema链接"
    xsi:noNamespaceSchemaLocation="对XML特化的语法定义"
-   title="标题名称" id="标题名称" help-id="Section-Starting-Page;WriterSide">
+   title="标题名称" id="文件名称" help-id="Section-Starting-Page;WriterSide">
 </topic>
 
 ```
 
-> **在代码块中我将 id 解释为标题名称的原因**
+> **在代码块中我将 id 解释为文件名称的原因**
 >
 > 一旦修改了创建时的 id 名称，软件会提示没有 H1 标题
 >
-> 最重要的是没找到在哪里引用了 id，只能改回原来的名称
+> 最重要的是，在 IDE 的 Project 列表中修改文件名，id 会被重构修改
 >
 {style="note"}
 

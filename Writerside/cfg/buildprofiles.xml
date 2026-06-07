@@ -9,10 +9,10 @@
         <!-- 自定义css -->
         <custom-css>custom.css</custom-css>
         <!-- 自定义logo -->
-        <header-logo>wroterside.svg</header-logo>
+        <header-logo>writerside.svg</header-logo>
         <!-- 点击logo跳转到指定网站 -->
         <product-web-url>https://luigits.github.io</product-web-url>
-        <custom-favicons>wroterside.svg</custom-favicons>
+        <custom-favicons>writerside.svg</custom-favicons>
         <!--右上角的下载功能-->
         <download-title>Get The Documents</download-title>
         <download-page>https://gitee.com/luigits/writerside-document</download-page>
@@ -98,6 +98,7 @@
         <link href="https://aisharedkb.com/">AISharedKB</link>
         <link href="https://regexlearn.com/">RegexLearn</link>
         <link href="https://toml.io/cn/">Toml</link>
+        <link href="https://docs.minegraph.cn/home" icon="MGC-darklogo.png">MineGraph Docs</link>
         <!--        <notice>不知道做什么的标签</notice>-->
         <!--        <icp>ICP 备案</icp>-->
         <copyright>2026 ZhanYu</copyright>
