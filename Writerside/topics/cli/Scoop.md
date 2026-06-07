@@ -6,10 +6,29 @@
 <secondary-label ref="cli-secondary-scoop"/>
 <secondary-label ref="cli-secondary-bucket"/>
 
-## 自建 bucket {id="scoop-bucket"}
+## 安装 Scoop {id="scoop-install-scoop"}
+
+这是我自己写的脚本，可能会遇到各种问题，欢迎邮件告诉我:2833171898@qq.com
+
+<include from="cli-library.md" element-id="cli-lib-install_scoop"/>
+
+## 使用 scoop {id="scoop-using-scoop"}
+
+```PowerShell
+# 搜索软件名
+scoop search <APP_NAME>
+# 查看软件的详细信息
+scoop info <APP_NAME>
+# 下载软件
+scoop install <APP_NAME>
+```
+
+## 自建 bucket {id="scoop-create-bucket"}
 
 相信各位在浏览这部分内容的时候已经知道 scoop 社区提供了一个[模板](https://github.com/ScoopInstaller/BucketTemplate)用于自建
-bucket。但我要说的是，不要使用它的模板。
+bucket。
+
+<format color="Red">但我要说的是，不要使用它的模板。</format>
 
 该模板已经 2 年没更新了，但不同的是，官方维护的 main 库一直与时俱进。是的，直接克隆
 <ui-path>[main](https://github.com/ScoopInstaller/Main)</ui-path>
@@ -204,39 +223,40 @@ https://github.com/OpenHub-Store/GitHub-Store/releases/download/v1.9.0/GitHub-St
 
 ```json5
 {
-   // 找到官网粘贴进去就好了
-   "homepage": "https://github-store.org/",
-   // 搜一下这是个什么软件就知道了
-   "description": "GitHub Store is a free, open-source app store for GitHub releases.",
-   // 既然开源了那就能在仓库里看到，否则将用户协议链接贴上去，参考 bilibili 清单文件
-   "license": "Apache-2.0",
-   // 软件版本，复制的链接里有
-   "version": "1.9.0",
-   // 复制的链接粘贴到这，因为选择了 NSIS 安装程序，这里后面加上 #dl.7z 就好
-   "url": "https://github.com/OpenHub-Store/GitHub-Store/releases/download/v1.9.0/GitHub-Store-1.9.0.exe#/dl.7z",
-   // 第一次填写除非 release 提供了 hash 文件，否则需要自己下载下来自己生成，推荐使用 Powershell 的 Get-FileHash
-   "hash": "293BF6C7E8BFAE042A61A83900A15D5D0091155C93735F6990729ED5897CF0B5",
-   // 将启动程序和要创建什么样的快捷方式加进来就好
-   "shortcuts": [
-      [
-         "github-store.exe",
-         "GitHub Store"
-      ]
-   ],
-   // 如果是从 GitHub 获取就直接将仓库地址放上就行，scoop 会自己解析，获取最新版本号
-   "checkver": {
-      "github": "https://github.com/OpenHub-Store/GitHub-Store"
-   },
-   "autoupdate": {
-      // 使用$version 来表示获取到的版本号，也就是最新版本
-      "url": "https://github.com/OpenHub-Store/GitHub-Store/releases/download/v$version/GitHub-Store-$version.exe#/dl.7z"
-   },
-   // post_install 表示安装结束后执行，在没有这行命令的情况下，scoop 实际上是将压缩包解压到了指定位置，使用该命令可以将 NSIS 的文件夹删除，只保留软件本体
-   "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse -ErrorAction SilentlyContinue"
+  // 找到官网粘贴进去就好了
+  "homepage": "https://github-store.org/",
+  // 搜一下这是个什么软件就知道了
+  "description": "GitHub Store is a free, open-source app store for GitHub releases.",
+  // 既然开源了那就能在仓库里看到，否则将用户协议链接贴上去，参考 bilibili 清单文件
+  "license": "Apache-2.0",
+  // 软件版本，复制的链接里有
+  "version": "1.9.0",
+  // 复制的链接粘贴到这，因为选择了 NSIS 安装程序，这里后面加上 #dl.7z 就好
+  "url": "https://github.com/OpenHub-Store/GitHub-Store/releases/download/v1.9.0/GitHub-Store-1.9.0.exe#/dl.7z",
+  // 第一次填写除非 release 提供了 hash 文件，否则需要自己下载下来自己生成，推荐使用 Powershell 的 Get-FileHash
+  "hash": "293BF6C7E8BFAE042A61A83900A15D5D0091155C93735F6990729ED5897CF0B5",
+  // 将启动程序和要创建什么样的快捷方式加进来就好
+  "shortcuts": [
+    [
+      "github-store.exe",
+      "GitHub Store"
+    ]
+  ],
+  // 如果是从 GitHub 获取就直接将仓库地址放上就行，scoop 会自己解析，获取最新版本号
+  "checkver": {
+    "github": "https://github.com/OpenHub-Store/GitHub-Store"
+  },
+  "autoupdate": {
+    // 使用$version 来表示获取到的版本号，也就是最新版本
+    "url": "https://github.com/OpenHub-Store/GitHub-Store/releases/download/v$version/GitHub-Store-$version.exe#/dl.7z"
+  },
+  // post_install 表示安装结束后执行，在没有这行命令的情况下，scoop 实际上是将压缩包解压到了指定位置，使用该命令可以将 NSIS 的文件夹删除，只保留软件本体
+  "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse -ErrorAction SilentlyContinue"
 }
 ```
 
-如果软件不是从 GitHub 这类代码托管平台获取的，那么就得好好解析版本号规律了，需要将正则写完整放入 checkvar 中。比如 bilibili、qq-nt
+如果软件不是从 GitHub 这类代码托管平台获取的，那么就得好好解析版本号规律了，需要将正则写完整放入 checkvar 中。比如
+bilibili、qq-nt
 
 #### 同步远程库 {id="scoop-H4-sync_repo"}
 

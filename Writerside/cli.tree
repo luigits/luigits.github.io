@@ -10,5 +10,7 @@
     <toc-element topic="ollama.md"/>
     <toc-element topic="屎山代码分析工具.md"/>
     <toc-element topic="Scoop.md"/>
+    <toc-element topic="安装-winget.md"/>
+    <toc-element topic="Neovim.md"/>
     <toc-element topic="About-CLI.md"/>
 </instance-profile>
