@@ -11,11 +11,11 @@
         <!-- 自定义logo -->
         <header-logo>writerside.svg</header-logo>
         <!-- 点击logo跳转到指定网站 -->
-        <product-web-url>https://luigits.github.io</product-web-url>
+        <product-web-url>https://luigits.github.io/learn-writerside/</product-web-url>
         <custom-favicons>writerside.svg</custom-favicons>
         <!--右上角的下载功能-->
-        <download-title>Get The Documents</download-title>
-        <download-page>https://gitee.com/luigits/writerside-document</download-page>
+        <download-title>前往仓库</download-title>
+        <download-page>https://github.com/luigits/NoteLibrary</download-page>
         <showDownloadButton>true</showDownloadButton>
         <!-- 代码块可换行 在代码块上增加切换按钮，可手动切换 -->
         <code-soft-wrap>true</code-soft-wrap>
