@@ -1,11 +1,11 @@
 name: build no search
-on:
 #  push:
 #    branches: ['master']
 
+on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 1'
+    - cron: '0 * * * *'
 
 permissions:
   id-token: write
