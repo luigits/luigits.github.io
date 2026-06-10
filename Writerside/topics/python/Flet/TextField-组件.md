@@ -69,9 +69,9 @@ def onchange(e: ft.Event):
 def main(page: ft.Page):
     textField = ft.TextField(
         on_change=onchange,  # 当内容改变时调用
-        on_blur=onchange,  # 当失去焦点时调用
-        on_focus=onchange,  # 当获得焦点时调用
-        on_submit=onchange,  # 当回车提交内容时调用，且要求 shift_enter 设置为 true
+        on_blur=onblur,  # 当失去焦点时调用
+        on_focus=onfocus,  # 当获得焦点时调用
+        on_submit=onsubmit,  # 当回车提交内容时调用，且要求 shift_enter 设置为 true
     )
     page.add(textField)
 ```

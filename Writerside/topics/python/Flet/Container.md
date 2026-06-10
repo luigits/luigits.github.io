@@ -20,7 +20,7 @@ container1 = ft.Container(
 	
 	# 对齐方式
 	alignment=ft.Alignment.CENTER,  # 必须写全，否则不认。要求容器空间远大于内部组件空间，否则无效
-	expand=True,  # container 继承父容器的全部宽高
+	expand=True,  # container 继承父容器的    全部宽高
 )
 ```
 

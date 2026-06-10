@@ -72,3 +72,36 @@ def onchange(e: ft.Event):
 > 此类影响到整个窗口甚至整个程序的回调函数刷新不要使用组件级的 `e.control.update()`
 >
 > 要使用页面级的 `page.update()` 
+
+---
+
+value - 该开关的当前值。
+label - 显示在此开关右侧的可单击标签。
+active_color - 激活时使用的颜色。
+active_track_color - 激活时的底色，
+Adaptive - 是否应根据目标平台创建自适应 Switch。
+hover_color - 鼠标指针悬停在其上方时使用的颜色。
+padding - Switch 边界内子项周围的空间量。
+mouse_cursor - 当鼠标指针进入或悬停在该控件上时显示的光标。
+
+
+
+
+
+
+
+autofocus - 是否选择此开关作为初始焦点。
+focus_color - 用于键盘交互的焦点突出显示的颜色。
+inactive_thumb_color - 当此开关关闭时拇指上使用的颜色。
+inactive_track_color - 当此开关关闭时在轨道上使用的颜色。
+label_position - 标签的位置（如果提供）。
+label_text_style - 标签的文本样式（当它是字符串时）。
+overlay_color - 各种 ControlState 状态下开关材质的颜色。
+splash_radius - 按下开关时飞溅效果的半径。
+thumb_color - 此开关的拇指在各种 ControlState 状态下的颜色。
+thumb_icon - 此 Switch 的拇指在各种 ControlState 状态下的图标。
+track_color - 此开关在各种 ControlState 状态下的轨道颜色。
+track_outline_color - 该开关在各种 ControlState 状态下轨道的轮廓颜色。
+track_outline_width - 所有或特定 ControlState 状态下此开关轨道的轮廓宽度。
+
+
