@@ -3,11 +3,9 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="Writerside_libraries"
-                  name="Writerside_libraries" is-library="true" start-page="powershell-library.md">
+                  name="Writerside_libraries" is-library="true" start-page="code-libirary.md">
 
-    <toc-element topic="powershell-library.md"/>
-    <toc-element topic="lw-library.md"/>
-    <toc-element topic="cli-library.md"/>
-    <toc-element topic="project-library.md"/>
-    <toc-element topic="py-library.md"/>
+    <toc-element topic="project-library.md"/> <!-- 整个项目会使用的片段 -->
+    <toc-element topic="lw-library.md"/> <!-- Writerside片段 -->
+    <toc-element topic="code-libirary.md"/> <!-- 编程相关片段 -->
 </instance-profile>

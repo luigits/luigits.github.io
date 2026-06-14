@@ -72,22 +72,21 @@
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
-    <build-profile instance="cli">
-        <variables>
-            <noindex-content>false</noindex-content>
-        </variables>
-    </build-profile>
-    <build-profile instance="py">
-        <variables>
-            <noindex-content>false</noindex-content>
-        </variables>
-    </build-profile>
     <build-profile instance="old">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
-
+    <build-profile instance="soft">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+    <build-profile instance="code">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
     <!--  页脚功能  -->
 
     <footer>
@@ -110,14 +109,4 @@
     <!--        <local-src>icons</local-src>-->
     <!--    </icons>-->
     <sitemap change-frequency="monthly"/>
-    <build-profile instance="soft">
-        <variables>
-            <noindex-content>false</noindex-content>
-        </variables>
-    </build-profile>
-    <build-profile instance="ps">
-        <variables>
-            <noindex-content>false</noindex-content>
-        </variables>
-    </build-profile>
 </buildprofiles>

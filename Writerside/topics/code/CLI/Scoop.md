@@ -10,8 +10,6 @@
 
 这是我自己写的脚本，可能会遇到各种问题，欢迎邮件告诉我:2833171898@qq.com
 
-<include from="cli-library.md" element-id="cli-lib-install_scoop"/>
-
 ## 使用 scoop {id="scoop-using-scoop"}
 
 ```PowerShell

@@ -1,6 +1,7 @@
 <show-structure depth="3"/>
 
 # 初识 Flet
+
 <secondary-label ref="global-construct"/>
 
 <tldr>
@@ -9,15 +10,43 @@
 
 ## 安装 Flet {id="flet_1"}
 
-<include from="project-library.md" element-id="placeholder"/>
+安装 flet 很简单
+
+<tabs>
+<tab title="pip">
+
+```bash
+# 只安装核心
+pip install flet
+# 安装全部,包括Desktop、cli、web等依赖
+pip install flet[all]
+```
+
+</tab>
+<tab title="uv">
+
+```bash
+# 只安装核心
+uv install flet
+# 安装全部,包括Desktop、cli、web等依赖
+uv install flet[all]
+```
+
+</tab>
+</tabs>
 
 ## 运行 Flet {id="flet_2"}
 
-<include from="project-library.md" element-id="placeholder"/>
+flet 提供了运行程序的命令 `flet`,倘若不使用热加载随时渲染也可以使用 python 执行文件
+
+```Bash
+# 运行src目录下的main.py文件，使用Desktop依赖
+flet run
+# 在浏览器中运行main.py文件，使用web依赖
+flet run -w
+```
 
 ## 编译 Flet{id="flet_3"}
-
-<include from="project-library.md" element-id="placeholder"/>
 
 > **可以跳过本文档**
 >
@@ -27,14 +56,16 @@
 
 这一步比较复杂，需要其他的软件配合
 
-> flet 除了原生的 build 之外，还有一个 pack 命令，他是通过 Pyinstaller 进行编译打包
+> flet 除了原生的 build 之外，还有一个 pack 命令，他是通过 Pyinstaller 进行编译打包，打包成一个可运行的单文件
 
 ## 需要的软件
 
-| 编辑器  |      vscode      |
-|:----:|:----------------:|
-| 网络加速 |     steam++      |
-| 额外的库 | pip-system-certs |
+| 编辑器  |        vscode        |
+|:----:|:--------------------:|
+| 网络加速 | 需要能正常打开、下载 GitHub 资源 |
+| 额外的库 |   pip-system-certs   |
+
+{style="none"}
 
 ## 报错
 
@@ -52,7 +83,7 @@ HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url:
 
 flet 有自己的命令初始化代码模板，此命令是通过从 GitHub 下载 zip 文件解压覆盖的方式完成，因此需要能正确从 GitHub 下载文件。
 
-steam++ 可以直接让 flet 下载需要的组件，若下载报错超时则可以在本地 *flet-cli* 中修改 ==build_base.py==，通过代理链接的方式完成下载
+steam++ 的加速功能可以让 flet 下载需要的组件，若下载报错超时则可以在本地 **flet-cli** 中修改 <ui-path>build_base.py</ui-path>，通过代理链接的方式完成下载
 
 ```python
 # 原始 url
@@ -71,36 +102,30 @@ DEFAULT_TEMPLATE_URL = (
 
 ### 缺少文件
 
-这个报错比较长，自己看过报错信息基本上就是说缺少 DLLs 和 Lib，此时只需要将需要的文件手动复制过去即可，不需要额外的设置
-
-> **完整报错信息**，这部分很长，可以直接忽略
->
-
-
-想要知道的详细写可以仔细看看上面的完整报错，如果不想浪费时间就继续往后看
+这个报错比较长，报错信息基本上是说缺少 DLLs 和 Lib，此时只需要将需要的文件手动复制过去即可，不需要额外的设置
 
 ```powershell
 # 涉及到的目录
 ## 初始位置
-<项目目录>/build/flutter/build/windows/x64/python
-<Project>/build/site-packages
+path1:<项目目录>/build/flutter/build/windows/x64/python
+path2:<项目目录>/build/site-packages
 ## 目标位置
-<项目目录>/build/flutter/build/windows/x64/runner/Release
+path3:<项目目录>/build/flutter/build/windows/x64/runner/Release
 # 涉及到的操作
 ## 复制目录Lib
-<项目目录>/build/flutter/build/windows/x64/python/Lib -> <项目目录>/build/flutter/build/windows/x64/runner/Release/Lib
+path1/Lib -> path3/Lib
 ## 复制目录DLLs
-<项目目录>/build/flutter/build/windows/x64/python/DLLs -> <项目目录>/build/flutter/build/windows/x64/runner/Release/DLLs
+path1/DLLs -> path3/DLLs
 ## 复制site-packages
-<项目目录>/build/site-packages -> <项目目录>/build/flutter/build/windows/x64/runner/Release/site-packages
+path2 -> path3/site-packages
 ```
 
 除此之外还有几个删除操作
 ，不过无伤大雅，只需要保证上面的目录中有所需要的文件让 build 命令操作即可
 
-再次整理上面的目录，都是复制到 <ui-path>&lt;Project&gt;/build/flutter/build/windows/x64/runner/Release</ui-path> 因此进行第一次实验
+再次整理上面的目录，都是复制到 path3，因此进行第一次实验
 
-1. 将 build 命令下载的 Cpython 完整复制到 <ui-path>&lt;Project&gt;/build/flutter/build/windows/x64/python</ui-path>
+1. 将 build 命令下载的 Cpython 完整复制到 path1
 2. 不复制 <ui-path>site-packages</ui-path>
 
 经过尝试，python 目录复制后其他工作 build 命令自行完成。
