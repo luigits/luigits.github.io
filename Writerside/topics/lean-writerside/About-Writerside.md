@@ -9,3 +9,5 @@
 而导致这一切的原因是无法在 markdown 中使用`<spotlight>`，我想通过`<card>`创建首页卡片，但 markdown 解释器不支持，只能采用文件也混用的方式
 
 使用 topic 进行编写，又不知晓如何设置标题，只能起始页使用 topic，其他页面使用 markdown 来编写了。官网提供的 [markup](https://www.jetbrains.com/help/writerside/semantic-markup-reference.html) 提供了各种标记可以抽空看一下
+
+<include from="project-library.md" element-id="explain-instance"></include>
